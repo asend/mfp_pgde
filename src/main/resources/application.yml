@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://mfpservermain.database.windows.net:1433;database=mfpDb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: mfp
+    password: passer@123
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.SQLServerDialect
+
+server:
+  port: 9090
+
+
